@@ -1,0 +1,9 @@
+#img-bg{
+    background-image:  url('https://swall.teahub.io/photos/small/176-1764351_technology-backgrounds-compatible.jpg');
+
+    min-height: 695px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
