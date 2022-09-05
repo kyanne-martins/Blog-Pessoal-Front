@@ -12,16 +12,16 @@
 
                     <div class="form-group">
                         <label for="usuario">Usuário</label>
-                        <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Digite seu usuário:">
+                        <input [(ngModel)]='userLogin.usuario' class="form-control" type="text" name="usuario" id="usuario" placeholder="Digite seu usuário:">
                     </div>
 
                     <div class="form-group">
                             <label for="senha">Senha</label>
-                            <input class="form-control" type="password" name="usuario" id="senha" placeholder="Digite sua senha:">
+                            <input [(ngModel)]='userLogin.senha' class="form-control" type="password" name="usuario" id="senha" placeholder="Digite sua senha:">
                     </div>
 
                     <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-outline-secondary mt-3">Entrar</button>
+                            <button type="submit" class="btn btn-outline-secondary mt-3" (click)='entrar()'>Entrar</button>
                     </div>
 
                     <hr class="mt-4 mb-5">
