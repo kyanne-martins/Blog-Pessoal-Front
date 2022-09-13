@@ -13,20 +13,16 @@
           <p class="m-0 font-weight-bold text-white fs-16">Olá, {{nome}}</p>
         </li>
       
-        <li>
-          <a href="">
-            <p class="text-white fs-16 ml-1">
-              <i class="far fa-edit"></i>
-            </p>
+        <li class="nav-item pl-3">
+          <a [routerLink]="['/user-edit', id]" >
+            <p class="text-white fs-16 m-0"><i class="far fa-edit" aria-hidden="true"></i></p>
           </a>
         </li>
-
-
       </ul>
 
       <ul class="navbar-nav mb-4">
         <li class="nav-item mt-0">
-          <a (click)= 'sair()' class=" font-weight-bold text-white fs-16 ">Sair <i class="fas fa-sign-out-alt"></i> </a>
+          <a (click)='sair()' class=" font-weight-bold text-white fs-16 ">Sair<i class="fas fa-sign-out-alt"></i></a>
         </li>
       </ul>
     
